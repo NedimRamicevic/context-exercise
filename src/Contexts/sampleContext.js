@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const sampleContext = React.createContext()
+export const SampleContext = React.createContext()
+
 function SampleContextProvider({children}) {
+
+    const [name, setName] = useState("Naber")
+
+
     return (
-        <sampleContext.Provider>
+        <SampleContext.Provider value = {{name , setName}}>
             {children}
-        </sampleContext.Provider>
+        </SampleContext.Provider>
     )
 }
 

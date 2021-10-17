@@ -1,6 +1,6 @@
 import './App.css';
-import {SampleContextProvider} from './Contexts/sampleContext'
-import {ShowName} from './Components/ShowName'
+import SampleContextProvider from './Contexts/sampleContext'
+import ShowName from './Components/ShowName'
 
 function App() {
   return (
