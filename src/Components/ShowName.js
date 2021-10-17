@@ -3,7 +3,7 @@ import {SampleContext} from '../Contexts/sampleContext'
 
 
 function ShowName() {
-    const {name , SetName} = useContext(SampleContext)
+    const {name} = useContext(SampleContext)
 
     return (
         <div>
